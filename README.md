@@ -12,15 +12,15 @@ Before running webpack, you must define a global variable named `__PATH_REPLACE_
 
 ```json
 {
-    'a.styl': 'xxx.css',
-    'b.styl': 'xxxx.css'
+    "a.styl": "xxx.css",
+    "b.styl": "xxxx.css"
 }
 ```
 
 ```js
 loaders: [
     {
-        test: /\.css$/,
+        test: /\.styl$/,
         loader: 'style-loader!css-loader!path-replace-map-loader'
     }
 ]
